@@ -1,0 +1,54 @@
+<div class="container">
+    <form novalidate #form="ngForm" [formGroup]="formulario">
+        <h3>{{titulo}}</h3>
+        <div class="form-row">
+            <div class="form-group col-md-6" *ngIf="editMode">
+                <label>Imagen SuperHeroe: </label>
+                <img formControlName="imagen" *ngIf="filtroService.imagen !== null" [src]="filtroService.imagen" class="card-img-top imagen-tarjeta" alt="Imagen del Superheroe">
+                <img formControlName="imagen" *ngIf="filtroService.imagen === null" [src]="emptyImage" class="card-img-top imagen-tarjeta" alt="Imagen del Superheroe">
+            </div>
+            <!-- Campo para añadir imagen -->
+            <div class="form-group col-md-6" *ngIf="!editMode">
+                <input formControlName="file" id="file" type="file" class="form-control" (change)="onFileChange($event)">
+            </div>
+            <div class="form-group col-md-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Superheroe: </mat-label>
+                    <input matInput class="form-control" formControlName="superhero" id="inputAddress" placeholder="Superheroe" toUppercase>
+                </mat-form-field>
+            </div>
+            <div class="form-group col-md-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Editorial: </mat-label>
+                    <input matInput class="form-control" formControlName="publisher" placeholder="Editorial">
+                </mat-form-field>
+            </div>
+            <div class="form-group col-md-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Primera Publicación: </mat-label>
+                    <input matInput class="form-control" formControlName="first_appearance" placeholder="Editorial">
+                </mat-form-field>
+            </div>
+            <div class="form-group col-md-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Nombre real: </mat-label>
+                    <input matInput class="form-control" formControlName="alter_ego" placeholder="Nombre real">
+                </mat-form-field>
+            </div>
+            <div class="form-group col-md-6">
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Caracteristicas: </mat-label>
+                    <input matInput class="form-control" formControlName="characters" placeholder="Caracteristicas o poderes">
+                </mat-form-field>
+            </div>
+        </div>
+    </form>
+    <div class="form-group">
+        <div class="col-md-6" *ngIf="!editMode">
+            <button type="button" (click)="submit()" class="btn btn-primary">Añadir Heroe</button>
+        </div>
+        <div class="col-md-6" *ngIf="editMode">
+            <button type="button" (click)="submit()" class="btn btn-primary">Modificar Heroe</button>
+        </div>
+    </div>
+</div>

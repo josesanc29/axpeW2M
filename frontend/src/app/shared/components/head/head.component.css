@@ -1,0 +1,33 @@
+.jumbotron {
+    padding: 0.8rem 10rem;
+    margin-bottom: 0rem;
+    background-color: black;
+}
+
+.container-head {
+    width: 100%;
+    background-color: black;
+    margin: 1%;
+}
+
+.container-logos {
+    display: inline-flex;
+}
+
+.head-logos {
+    height: 150px;
+    display: inline-block;
+}
+
+.head-date {
+    position: absolute;
+    font-size: 15px;
+    margin: -2px 30px;
+    color: white;
+    font-weight: bold;
+}
+
+img.card-img-top.imagen-tarjeta {
+    height: auto;
+    width: 40%;
+}

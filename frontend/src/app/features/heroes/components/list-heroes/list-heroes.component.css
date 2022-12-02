@@ -1,0 +1,29 @@
+img.card-img-top.imagen-tarjeta {
+    height: 140px;
+    width: auto;
+}
+
+table.mat-table.cdk-table.mat-elevation-z8 {
+    margin: 25px 50px;
+}
+
+.list-icons-supers {
+    display: flex;
+    margin: -2%;
+}
+
+span.mat-button-wrapper {
+    cursor: pointer;
+}
+
+.material-icons.md-24 {
+    font-size: 24px;
+}
+
+th.mat-header-cell,
+td.mat-cell,
+td.mat-footer-cell {
+    padding: 2px;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+}

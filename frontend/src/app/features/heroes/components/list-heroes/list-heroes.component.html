@@ -1,0 +1,57 @@
+<div class="container">
+    <div class="row">
+        <mat-form-field appearance="fill">
+            <mat-label>Filtrar datos tabla: </mat-label>
+            <input (keyup)="filterData($event)" matInput placeholder="Filtro">
+        </mat-form-field>
+    </div>
+    <div class="row" *ngIf="superheroes?.length>0">
+        <div class="mat-elevation-z8">
+            <table mat-table [dataSource]="dataSource" matSort>
+                <ng-container matColumnDef="imagen">
+                    <th mat-header-cell *matHeaderCellDef> Imagen </th>
+                    <td mat-cell *matCellDef="let heroe">
+                        <img *ngIf="heroe.imagen !== null" [src]="heroe.imagen" class="card-img-top imagen-tarjeta">
+                        <img *ngIf="heroe.imagen === null" [src]="emptyImage" class="card-img-top imagen-tarjeta">
+                    </td>
+                </ng-container>
+                <ng-container matColumnDef="superhero">
+                    <!-- <ng-container matColumnDef="superhero" (keyup)="filterData($event)"> -->
+                    <th mat-header-cell *matHeaderCellDef> Superheroe </th>
+                    <td mat-cell *matCellDef="let heroe"> {{heroe.superhero | uppercase}} </td>
+                </ng-container>
+                <ng-container matColumnDef="publisher">
+                    <th mat-header-cell *matHeaderCellDef> Editorial </th>
+                    <td mat-cell *matCellDef="let heroe"> {{heroe.publisher}} </td>
+                </ng-container>
+                <ng-container matColumnDef="alter_ego">
+                    <th mat-header-cell *matHeaderCellDef> Nombre Real </th>
+                    <td mat-cell *matCellDef="let heroe"> {{heroe.alter_ego}} </td>
+                </ng-container>
+                <ng-container matColumnDef="first_appearance">
+                    <th mat-header-cell *matHeaderCellDef> Primera Aparición </th>
+                    <td mat-cell *matCellDef="let heroe"> {{heroe.first_appearance}} </td>
+                </ng-container>
+                <ng-container matColumnDef="characters">
+                    <th mat-header-cell *matHeaderCellDef> Poderes </th>
+                    <td mat-cell *matCellDef="let heroe"> {{heroe.characters}} </td>
+                </ng-container>
+                <ng-container matColumnDef="botones">
+                    <th mat-header-cell *matHeaderCellDef> Opciones </th>
+                    <td mat-cell *matCellDef="let heroe">
+                        <div class="list-icons-supers">
+                            <button (click)="add()" matTooltip="crear nuevo superheroe" mat-button color="primary"><span class="material-icons md-24">add_circle</span></button>
+                            <button (click)="selectHero(heroe)" matTooltip="editar datos de superheroe" mat-button color="primary"><span class="material-icons md-24">visibility</span></button>
+                            <button (click)="deleteHero(heroe)" matTooltip="eliminar  el superheroe" mat-button color="primary"><span class="material-icons md-24">delete</span></button>
+                        </div>
+                    </td>
+                </ng-container>
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+            <mat-paginator [length]="dataSource.data.length" [pageSize]="4" [pageSizeOptions]="[4, 5, 10]" aria-label="Select page">
+            </mat-paginator>
+        </div>
+    </div>
+    <ngx-spinner bdColor="rgba(51,51,51,0.8)" size="large" color="#fff" type="ball-circus" [fullScreen]="true"></ngx-spinner>
+</div>

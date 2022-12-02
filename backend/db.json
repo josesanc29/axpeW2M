@@ -1,0 +1,148 @@
+{
+  "superheroes": [
+    {
+      "id": 1,
+      "superhero": "Batman",
+      "publisher": "DC Comics",
+      "alter_ego": "Bruce Wayne",
+      "first_appearance": "Detective Comics #27",
+      "characters": "Bruce Wayne",
+      "imagen": "./assets/images/batman.jpg"
+    },
+    {
+      "id": 2,
+      "imagen": "./assets/images/superman.jpg",
+      "superhero": "Superman",
+      "publisher": "DC Comics",
+      "alter_ego": "Jose SD",
+      "first_appearance": "Action Comics #1",
+      "characters": "Volar, fuerza ,rayos-x, hipervelocidad"
+    },
+    {
+      "id": 3,
+      "superhero": "Flash",
+      "publisher": "DC Comics",
+      "alter_ego": "Jay Garrick",
+      "first_appearance": "Flash Comics #1",
+      "characters": "Jay Garrick",
+      "imagen": "./assets/images/flash.jpg"
+    },
+    {
+      "id": 4,
+      "superhero": "Spider Man",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Peter Parker",
+      "first_appearance": "Amazing Fantasy #15",
+      "characters": "Peter Parker",
+      "imagen": "./assets/images/spiderman.jpg"
+    },
+    {
+      "id": 5,
+      "imagen": "./assets/images/capitan.jpg",
+      "superhero": "Captain America",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Steve Rogers",
+      "first_appearance": "Captain America Comics #1",
+      "characters": "Steve Rogers"
+    },
+    {
+      "id": 6,
+      "superhero": "Iron Man",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Tony Stark",
+      "first_appearance": "Tales of Suspense #39",
+      "characters": "Tony Stark",
+      "imagen": "./assets/images/ironman.jpg"
+    },
+    {
+      "id": 7,
+      "superhero": "Hulk",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Bruce Banner",
+      "first_appearance": "The Incredible Hulk #1",
+      "characters": "Bruce Banner",
+      "imagen": "./assets/images/hulk.jpg"
+    },
+    {
+      "id": 8,
+      "superhero": "Lobezno",
+      "publisher": "Marvel Comics",
+      "alter_ego": "James Logan",
+      "first_appearance": "The Incredible Hulk #180",
+      "characters": "James Logan",
+      "imagen": "./assets/images/lobezno.jpg"
+    },
+    {
+      "id": 9,
+      "superhero": "Daredevil",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Matthew Michael Murdock",
+      "first_appearance": "Daredevil #1",
+      "characters": "Matthew Michael Murdock",
+      "imagen": "./assets/images/daredevil.png"
+    },
+    {
+      "id": 10,
+      "superhero": "Silver Surfer",
+      "publisher": "Marvel Comics",
+      "alter_ego": "Norrin Radd",
+      "first_appearance": "The Fantastic Four #48",
+      "characters": "Norrin Radd",
+      "imagen": "./assets/images/estela.png"
+    },
+    {
+      "id": 11,
+      "superhero": "Spawn",
+      "publisher": "Image Comics",
+      "alter_ego": "Al Simmons",
+      "first_appearance": "Spawn #1",
+      "characters": "No muerto, acoplito demoniaco, poderes magicos",
+      "imagen": "./assets/images/spawn.jpg"
+    },
+    {
+      "id": 12,
+      "superhero": "Deathblow",
+      "publisher": "Image Comics",
+      "alter_ego": "Michael Cray",
+      "first_appearance": "Deathblow #1",
+      "characters": "regeneracion salud, entrenamiento militar, superfuerza",
+      "imagen": "./assets/images/deathblow.jpg"
+    },
+    {
+      "id": 13,
+      "imagen": "./../../../../../assets/images/mortadelo.jpg",
+      "superhero": "MORTADELO",
+      "publisher": "Bruguera",
+      "alter_ego": "Mortadelo",
+      "first_appearance": "Pulgarcito nº1394",
+      "characters": "Agente TIA"
+    },
+    {
+      "id": 14,
+      "imagen": "./../../../../../assets/images/sacarino.JPG",
+      "superhero": "SACARINO",
+      "publisher": "Bruguera",
+      "alter_ego": "Sacarino",
+      "first_appearance": "Tio vivo 345",
+      "characters": "Botones o"
+    },
+    {
+      "id": 15,
+      "imagen": "./../../../../../assets/images/rompetechos2.JPG",
+      "superhero": "ROMPETECHOS",
+      "publisher": "Bruguera",
+      "alter_ego": "Rompetechos",
+      "first_appearance": "Tio Vivo 239",
+      "characters": "No ve un pimiento"
+    },
+    {
+      "id": 16,
+      "imagen": "./../../../../../assets/images/13rue.jpg",
+      "superhero": "13 RUE DEL PERCEBE",
+      "publisher": "Bruguera",
+      "alter_ego": "13 rue percebe",
+      "first_appearance": "Tio Vivo 314",
+      "characters": "Edificio de vecinos locos"
+    }
+  ]
+}

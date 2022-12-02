@@ -1,0 +1,27 @@
+{
+    "runAsDemo": false,
+    "apisBaseUrl": "http://localhost:3000/",
+    "removeHeader": [
+        "/",
+        "/login",
+        "/login/*",
+        "/sesion-expirada",
+        "/acceso-denegado",
+        "/pagina-no-encontrada"
+    ],
+    "removeFooter": [
+        "/",
+        "/login",
+        "/login/*",
+        "/sesion-expirada",
+        "/acceso-denegado",
+        "/pagina-no-encontrada"
+    ],
+    "redirectWhenLogin": "inicio",
+    "redirectWhenLogOut": "/login",
+    "redirectWhenExpireToken": "sesion-expirada",
+    "redirectWhenTimeout": "sesion-expirada",
+    "redirectWhenForbidden": "acceso-denegado",
+    "inactivityTimeout": 1800,
+    "inactivityWarning": 1740
+}
